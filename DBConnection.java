@@ -15,7 +15,7 @@ public static void main(String args[]){
 	//step4 execute query  
 	ResultSet rs=stmt.executeQuery("select * from employee");  
 	while(rs.next())  
-	System.out.println("Empname :" +rs.getString(2)");  
+	System.out.println("Empname :" +rs.getString(2));
 	  
 	//step5 close the connection object  
 	con.close();  

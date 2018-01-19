@@ -35,6 +35,11 @@ public class ssn {
           if (!isDigit(str.charAt(i))){
             return false;
           }
+         else
+         {
+        	 if (str.charAt(i)== '0')
+        		 return false;
+          }
         }
         else if (i == 3 || i == 6){
           //these must be dashes, otherwise return false

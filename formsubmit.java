@@ -1,11 +1,10 @@
-package Naresh;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
-public class submit {
+public class FormSubmit {
 public static void main(String[] args) {
-	String chromeDriverlocation = "C:/ChromeDriver/chromedriver.exe";
+	String chromeDriverlocation = "C:/ChromeDrivers/chromedriver.exe";
     System.setProperty("webdriver.chrome.driver", chromeDriverlocation);
 	ChromeDriver driver = new ChromeDriver();
 	driver.navigate().to("http://www.practiceselenium.com/practice-form.html");
@@ -25,5 +24,6 @@ public static void main(String[] args) {
     {
 	  System.out.println("Navigated to HomePage");
     }
+    driver.quit();
  }
 }
